@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi Modern</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea, #fdfdfd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .input-group, .password-container {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label, .password-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group input, .password-container input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .password-container input[type="checkbox"] {
+            width: auto;
+            margin-left: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1c0081;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #ff4f8a;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Validasi</h1>
+        <form onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" placeholder="Masukkan nama">
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Masukkan email">
+            </div>
+            <div class="password-container">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" placeholder="Masukkan kata sandi">
+                <label>
+                    <input type="checkbox" onclick="togglePasswordVisibility()"> Tampilkan Sandi
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
