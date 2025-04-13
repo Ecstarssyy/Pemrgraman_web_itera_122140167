@@ -10,6 +10,7 @@ Aplikasi web sederhana untuk mencatat, menampilkan, dan mengelola jadwal mata ku
 - Tampilan responsif dan bersih
 
 ## 🖼️ Screenshot Aplikasi
+![prak2](https://github.com/user-attachments/assets/10c7288e-3135-402f-b0cc-0a3150441569)
 
 
 
